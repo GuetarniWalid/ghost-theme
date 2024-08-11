@@ -14,7 +14,11 @@
     "config": {
         "posts_per_page": 6,
         "card_assets": {
-            "exclude": ["bookmark", "gallery", "blockquote"]
+            "exclude": [
+                "bookmark",
+                "gallery",
+                "blockquote"
+            ]
         },
         "image_sizes": {
             "xxs": {
@@ -40,33 +44,41 @@
             }
         },
         "custom": {
-            "color_scheme": {
+            "Palette_de_couleurs": {
                 "type": "select",
-                "options": ["Light", "Dark", "Auto"],
+                "options": [
+                    "Light",
+                    "Dark",
+                    "Auto"
+                ],
                 "default": "Light"
             },
             "logo_for_dark_version": {
                 "type": "image",
-                "visibility": "color_scheme:[Dark,Auto]"
+                "visibility": "Palette_de_couleurs:[Dark,Auto]"
             },
             "content_api_key_for_search": {
                 "type": "text"
             },
-            "contact_form_endpoint": {
+            "URL_formulaire_de_contact": {
                 "type": "text"
             },
             "footer_copyright": {
-                "type": "text"
+                "type": "text",
+                "description": "Un copyright par default est affiché si ce champ est vide"
             },
             "disqus_shortname": {
                 "type": "text",
                 "group": "post"
             },
-            "tag_for_special_section": {
+            "Étiquette_pour_section_spéciale": {
                 "type": "text",
                 "group": "homepage",
-                "description": "Provide the tag slug you want to display in the section below the 'Load more' button"
+                "description": "Fournissez le slug de tag que vous souhaitez afficher dans la section sous le bouton 'Charger plus'"
             }
         }
+    },
+    "dependencies": {
+        "okiro": "file:"
     }
 }

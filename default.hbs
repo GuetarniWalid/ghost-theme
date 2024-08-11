@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{@site.locale}}"{{#match @custom.color_scheme "Dark"}} class="dark-mode"{{/match}}{{#match @custom.color_scheme "Auto"}} class="auto-dark-mode"{{/match}}>
+<html lang="{{@site.locale}}"{{#match @custom.Palette_de_couleurs "Dark"}} class="dark-mode"{{/match}}{{#match @custom.Palette_de_couleurs "Auto"}} class="auto-dark-mode"{{/match}}>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,10 +26,10 @@
 		{{>search}}
 		<script src="{{asset "js/global.js"}}"></script>
 		{{#if pagination.pages}}
-		<script src="{{asset "js/index.js"}}"></script>
+			<script src="{{asset "js/index.js"}}"></script>
 		{{/if}}
 		{{#is "post, page"}}
-		<script src="{{asset "js/post.js"}}"></script>
+			<script src="{{asset "js/post.js"}}"></script>
 		{{/is}}
 		{{{block "search_js"}}}
 		{{{block "notifications_js"}}}

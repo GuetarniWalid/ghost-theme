@@ -1,8 +1,8 @@
-{{#match @custom.tag_for_special_section}}
-{{#get "posts" limit="4" filter="tag:[{{@custom.tag_for_special_section}}]" include="authors,tags"}}
+{{#match @custom.Étiquette_pour_section_spéciale}}
+{{#get "posts" limit="4" filter="tag:[{{@custom.Étiquette_pour_section_spéciale}}]" include="authors,tags"}}
 <div class="global-sections{{>global sections_counter=true}}">
 	{{#foreach posts}}
-	{{>sections_item label=@custom.tag_for_special_section}}
+	{{>sections_item label=@custom.Étiquette_pour_section_spéciale}}
 	{{/foreach}}
 </div>
 {{/get}}
