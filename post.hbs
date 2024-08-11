@@ -7,15 +7,15 @@
 	{{>post_header}}
 	<div class="post-content">
 		{{#if access}}
-		{{content}}
-		{{>post_share}}
+			{{content}}
+			{{>post_share}}
 		{{else}}
-		{{#if html}}
-		<div class="members-teaser">
-			{{{html}}}
-		</div>
-		{{/if}}
-		{{>members/cta}}
+			{{#if html}}
+				<div class="members-teaser">
+					{{{html}}}
+				</div>
+			{{/if}}
+			{{>members/cta}}
 		{{/if}}
 	</div>
 </article>
@@ -24,9 +24,9 @@
 <div class="comments-section">
 	<div class="comments-wrap">
 		{{#if @custom.disqus_shortname}}
-		{{>services/disqus}}
+			{{>services/disqus}}
 		{{else if comments}}
-		{{comments title=(t "Member discussion") mode="auto"}}
+			{{comments title=(t "Member discussion") mode="auto"}}
 		{{/if}}
 	</div>
 </div>
