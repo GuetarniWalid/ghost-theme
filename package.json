@@ -1,5 +1,5 @@
 {
-    "name": "okiro",
+    "name": "poulpy",
     "demo": "https://okiro.fueko.net",
     "version": "3.4.0",
     "docs": "https://fueko.net/docs/okiro/",
@@ -44,7 +44,7 @@
             }
         },
         "custom": {
-            "Palette_de_couleurs": {
+            "palette_de_couleurs": {
                 "type": "select",
                 "options": [
                     "Light",
@@ -55,12 +55,12 @@
             },
             "logo_for_dark_version": {
                 "type": "image",
-                "visibility": "Palette_de_couleurs:[Dark,Auto]"
+                "visibility": "palette_de_couleurs:[Dark,Auto]"
             },
             "content_api_key_for_search": {
                 "type": "text"
             },
-            "URL_formulaire_de_contact": {
+            "url_formulaire_de_contact": {
                 "type": "text"
             },
             "footer_copyright": {
@@ -71,7 +71,7 @@
                 "type": "text",
                 "group": "post"
             },
-            "Étiquette_pour_section_spéciale": {
+            "etiquette_pour_section_speciale": {
                 "type": "text",
                 "group": "homepage",
                 "description": "Fournissez le slug de tag que vous souhaitez afficher dans la section sous le bouton 'Charger plus'"
@@ -79,6 +79,7 @@
         }
     },
     "dependencies": {
-        "okiro": "file:"
+        "okiro": "file:",
+        "poulpy": "file:"
     }
 }
