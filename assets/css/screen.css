@@ -3522,11 +3522,18 @@ small.global-question a:hover {
 .post-content .kg-signup-card.kg-width-full,
 .post-content .kg-header-card.kg-v2.kg-width-full {
   position: relative;
-  width: 110%;
+  width: 120%;
   left: -5%;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 870px) {
+  .post-content .kg-signup-card.kg-width-full,
+  .post-content .kg-header-card.kg-v2.kg-width-full {
+    width: 130%;
+  }
 }
 
 @media (min-width: 555px) {
@@ -3539,8 +3546,8 @@ small.global-question a:hover {
 @media (min-width: 768px) {
   .post-content .kg-signup-card.kg-width-full,
   .post-content .kg-header-card.kg-v2.kg-width-full {
-    max-width: 1000px;
-    transform: translateX(-5%);
+    max-width: unset;
+    transform: translateX(-9%);
   }
 }
 
